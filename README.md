@@ -4,14 +4,14 @@ The app that shows a list of movies using the tmdb API and the data about them o
 ___________________________________________________________________________________________________________________________
 
 Technologies:
-    Java 8
-    Android SDK
-    Retrofit 2 REST library
-    Data manipulation layer
-    Butterknife library
-    Lifecycle Architecture component
-    Glide
-    Android material
+    *Java 8
+    *Android SDK
+    *Retrofit 2 REST library
+    *Data manipulation layer
+    *Butterknife library
+    *Lifecycle Architecture component
+    *Glide
+    *Android material
 ___________________________________________________________________________________________________________________________
 
 Data request
