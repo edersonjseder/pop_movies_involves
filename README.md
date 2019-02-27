@@ -33,7 +33,7 @@ It was done the SHA certificate fingerprint as well with the command:\
 _'keytool -list -v -keystore movies.keystore -alias pop_movies -storepass [password] -keypass [password]'_\
 to sign the app and upload on GooglePlay.\ It can also be done with Android Studio through Gradle option by clicking app -> android and click the signingReport task and it will be generated the SHA certificate.
 
-The project is properly signed already, so only do the test verification through the Gradle task to validate the app signed. To create a release apk, just go to the Gradle option and click _app -> install_ and click in the installRelease gradle task (with a phone connected) and it will be generated an apk on _&lt;ProjectPath&gt;\&lt;ModuleName&gt;\build\outputs\apk_
+The project is properly signed already, so only do the test verification through the Gradle task to validate the app signed. To create a release apk, just go to the Gradle option and click _app -> install_ and click in the installRelease gradle task (with a phone connected) and it will be generated an apk on _&lt;&lt;ProjectPath&gt;&gt;/&lt;&lt;ModuleName&gt;&gt;/build/outputs/apk_
 
 As for the API_KEY of the TMDB API I used my personal, so I saved on the gradle.properties, which I put in the .gitignore file so that this sensitive information doesn't go to the public, I kindly ask you to use what you have, just put it in gradle.properties like that: API_KEY="&lt;&lt;api_key&gt;&gt;" because on the app.gradle the groovy script gets the api from there to be used with the API requests.
 
