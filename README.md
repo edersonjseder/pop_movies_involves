@@ -1,6 +1,6 @@
 # Pop Movies
 
-The app that shows a list of movies using the tmdb API and the data about them on details. Here you will find a project that aims to show through REST service request a movies list on screen.
+The app that shows a list of movies using the tmdb API and the data about them on details. Here you will find a project that aims to show through REST service request a movie list on screen.
 ___________________________________________________________________________________________________________________________
 
 Technologies:
