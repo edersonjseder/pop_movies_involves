@@ -37,8 +37,8 @@ The project is properly signed already, so only do the test verification through
 
 As for the API_KEY of the TMDB API I used my personal, so I saved on the gradle.properties, which I put in the .gitignore file so that this sensitive information doesn't go to the public, I kindly ask you to use what you have, just put it in gradle.properties like that: API_KEY="&lt;&lt;api_key&gt;&gt;" because on the app.gradle the groovy script gets the api from there to be used with the API requests.
 
-To generate an APK with gradle command, inside the project root, run _'./gradlew assembleRelease'_ to generate the release signed APK.
-To build the app in debug mode, run _'./gradlew assembleDebug'_ to generate the debug apk that will be installed on device for testing purposes.
+To generate an APK with gradle command, inside the project root, run _'./gradlew assembleRelease'_ to generate the release signed APK.<br/>
+To build the app in debug mode, run _'./gradlew assembleDebug'_ to generate the debug apk that will be installed on device for testing purposes.<br/>
 To generate with Android Studio, just go to the Gradle option and click _app -> other_ and execute the _'assembleRelease/assembleDebug'_ task.
 
 And then run adb install -r _&lt;&lt;path_to_your_build_folder&gt;&gt;/&lt;&lt;yourAppName&gt;&gt;.apk_
