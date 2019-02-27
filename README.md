@@ -24,7 +24,7 @@ Launching of the project:
 
 The project was developed on Android Studio in a linux environment, so to launch the app, first the SDK path which is in my personal directory has to be changed to the local path of the person who will test it. Android Studio will show a dialog with the current path and will ask if you wish to change, and then it will do that easily when the project is first opened on it when clicking 'OK'.
 
-The project is properly signed already, so only do the test verification through the Gradle task to validate the app signed by clicking the Gradle option on the right side of the Android Studio IDE: _app -> other_ and click on the task _'validateSigningRelease'_ with the _release_ variant selected.
+The project is properly signed already, so on Android Studio just do the test verification with a gradle task to validate the app signed by clicking the Gradle option on the right side of the IDE: _app -> other_ and click on the task _'validateSigningRelease'_ with the _release_ variant selected.
 
 It was generated a keystore for signing the app, using the command:\
 _'keytool -genkey -v -keystore movies.keystore -alias pop_movies -keyalg RSA -keysize 2048 -validity 10000'_<br/>
