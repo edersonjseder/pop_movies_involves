@@ -39,4 +39,4 @@ To generate an APK with gradle command, inside the project root, run ./gradlew a
 To build the app in debug mode, run ./gradlew assembleDebug to generate the debug apk that will be installed on device for testing purposes.
 To generate with Android Studio, just go to the Gradle option and click app -> other and execute the assembleRelease/assembleDebug task.
 
-And the adb install -r <<path-to-your-build-folder>>/<<yourAppName>>.apk
+And the adb install -r <path_to_your_build_folder>/<yourAppName>.apk
