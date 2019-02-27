@@ -22,7 +22,7 @@ ________________________________________________________________________________
 
 Launching of the project:
 
-The project was developed on Android Studio in a linux environment, so to launch the app, first the SDK path which is in my personal directory path has to be changed to the local path of the person who will test it.
+The project was developed on Android Studio in a linux environment, so to launch the app, first the SDK path which is in my personal directory has to be changed to the local path of the person who will test it.
 
 The project is properly signed already, so only do the test verification through the Gradle task to validate the app signed by clicking the Gradle option on the right side of the Android Studio IDE: _app -> other_ and click on the task _'validateSigningRelease'_ with the _release_ variant selected.
 
