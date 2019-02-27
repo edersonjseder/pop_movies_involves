@@ -3,9 +3,8 @@
 The app that shows a list of movies using the tmdb API and the data about them on details. Here you will find a project that aims to show through REST service request a movie list on screen.
 ___________________________________________________________________________________________________________________________
 
-Technologies:
-   - Java 8
-   - Android SDK
+##Technologies:
+   - Android SDK with Java 8
    - Retrofit 2 REST library
    - Data manipulation layer
    - Butterknife library
@@ -14,13 +13,13 @@ Technologies:
    - Android material
 ___________________________________________________________________________________________________________________________
 
-Data request
+##Data request
 
 The actual implementation uses REST request to fetch data to the app. The data comes in JSON format including the URL to the images showed on screen.
 ___________________________________________________________________________________________________________________________
 
 
-Launching of the project:
+##Launching the project:
 
 The project was developed on Android Studio in a linux environment, so to launch the app, first the SDK path which is in my personal directory has to be changed to the local path of the person who will test it. Android Studio will show a dialog with the current path and will ask if you wish to change, and then it will do that easily when the project is first opened on it when clicking 'OK'.
 
