@@ -22,7 +22,7 @@ ________________________________________________________________________________
 
 Launching of the project:
 
-The project was developed on Android Studio in a linux environment, so to launch the app, first the SDK path which is in my personal has to be changed to the local path of the tester.
+The project was developed on Android Studio in a linux environment, so to launch the app, first the SDK path which is in my personal directory path has to be changed to the local path of the person who will test it.
 
 It was generated a keystore for signing the app, using the command:
 'keytool -genkey -v -keystore movies.keystore -alias pop_movies -keyalg RSA -keysize 2048 -validity 10000'
