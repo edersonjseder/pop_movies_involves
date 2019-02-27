@@ -30,7 +30,7 @@ It was generated a keystore for signing the app, using the command:\
 The keystore is in the root directory of the project, so to test if the signing is fine, click the Gradle option on the right side of the Android Studio IDE and click app -> other and click on the task 'validateSigningRelease'
  
 It was done the SHA certificate fingerprint as well with the command:\
-<i>'keytool -list -v -keystore movies.keystore -alias pop_movies -storepass [password] -keypass [password]'<i/>\
+<i>'keytool -list -v -keystore movies.keystore -alias pop_movies -storepass [password] -keypass [password]'\<i/>
 to sign the app and upload on GooglePlay. It can also be done with Android Studio through Gradle option by clicking app -> android and click the signingReport task and it will be generated the SHA certificate.
 
 The project is properly signed already, so only do the test verification through the Gradle task to validate the app signed. To create a release apk, just go to the Gradle option and click app -> install and click in the installRelease gradle task (with a phone connected) and it will be generated an apk on <<ProjectPath>>\<<ModuleName>>\build\outputs\apk
