@@ -30,7 +30,7 @@ It was generated a keystore for signing the app, using the command:\
 _'keytool -genkey -v -keystore movies.keystore -alias pop_movies -keyalg RSA -keysize 2048 -validity 10000'_<br/>
 The keystore was generated in my personal directory path and I put it in the root directory of the project, so that the test can work fine.
 
-To install the release apk with Android Studio, go to the Gradle option and click _app -> install_ and click in the _'installRelease'_ gradle task (with a phone connected) and it will be installed on the device.
+To install the release apk with Android Studio, go to the Gradle option and click _app -> install_ and then in the _'installRelease'_ gradle task (with a phone connected) and it will be installed on the device.
  
 It was done the SHA certificate fingerprint as well with the command:\
 _'keytool -list -v -keystore movies.keystore -alias pop_movies -storepass [password] -keypass [password]'_ <br/>
