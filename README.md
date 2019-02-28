@@ -21,9 +21,9 @@ ________________________________________________________________________________
 
 **Launching the project:**
 
-The project was developed on Android Studio in a linux environment, so to launch the app, first the SDK path which is in my personal directory has to be changed to the local path of the person who will test it. Android Studio will show a dialog with the current path and will ask if you wish to change, and then it will do that easily when the project is first opened on it when clicking 'OK'.
+The project was developed on Android Studio in a linux environment, so to launch the app, first the SDK path which is in my personal directory has to be changed to the local path of the person who will test it. It can be either changing the path at *sdk.dir* in *local.properties* file or with Android Studio which will show a dialog with the current path informing you the need to change, so when clicking 'OK' it will do that easily when the project is first opened.
 
-The project is properly signed already, so on Android Studio just do the test verification with a gradle task to validate the app signed by clicking the Gradle option on the right side of the IDE: _app -> other_ and click on the task _'validateSigningRelease'_ with the _release_ variant selected. It can be done with the Debug variant as well by clicking in the _'validateSigningDebug'_ task.
+The project is properly signed already, so on Android Studio just do the test verification with a gradle task to validate the app signed by clicking the Gradle option on the right side of the IDE: _app -> other_ and click on the task _'validateSigningRelease'_ with the _release_ variant selected. It can be done with the Debug variant as well by clicking in the _'validateSigningDebug'_ task or by running *./gradlew validateSigningDebug* task in the project root directory.
 
 As for the API_KEY of the TMDB API I used my personal, so I saved on the gradle.properties, which I put in the .gitignore file so that this sensitive information doesn't go to the public, I kindly ask you to use what you have, just put it in gradle.properties like that: API_KEY="&lt;&lt;api_key&gt;&gt;" because on the app.gradle the groovy script gets the api from there to be used with the API requests.
 
