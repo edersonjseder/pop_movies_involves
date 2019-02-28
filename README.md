@@ -29,7 +29,7 @@ As for the API_KEY of the TMDB API I used my personal, so I saved on the gradle.
 
 To build the app without Android Studio and using Gradle only, go to the root of the project _'(&lt;&lt;your_directory&gt;&gt;/pop_movies)'_ and run _'./gradlew build'_ command. The Gradle will build the project and show something like this:<br/>
 
-<font color="gray">*Task :app:lint<br/>
+<font color="green">*Task :app:lint<br/>
 Ran lint on variant release: 73 issues found<br/>
 Ran lint on variant debug: 73 issues found<br/>
 Wrote HTML report to file:///home/ederson/Documents/Popular_movies_PS/Pop_movies/app/build/reports/lint-results.html<br/>
