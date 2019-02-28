@@ -27,7 +27,7 @@ The project is properly signed already, so on Android Studio just do the test ve
 
 As for the API_KEY of the TMDB API I used my personal, so I saved on the gradle.properties, which I put in the .gitignore file so that this sensitive information doesn't go to the public, I kindly ask you to use what you have, just put it in gradle.properties like that: API_KEY="&lt;&lt;api_key&gt;&gt;" because on the app.gradle the groovy script gets the api from there to be used with the API requests.
 
-To build the app by using Gradle only, no Android Studio, go to the root of the project _'(&lt;&lt;your_directory&gt;&gt;/pop_movies)'_ and run _'./gradlew build'_ command. The Gradle will build the project and show something like this:<br/>
+To build the app by using Gradle only with no Android Studio, go to the root of the project _'(&lt;&lt;your_directory&gt;&gt;/pop_movies)'_ and run _'./gradlew build'_ command. The Gradle will build the project and show something like this:<br/>
 
 <font color="green">*Task :app:lint<br/>
 Ran lint on variant release: 73 issues found<br/>
