@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="app_detail_name">Movie Detail</string>
+
+    <string name="error_message">
+        No data available. Try again later
+    </string>
+
+    <string name="no_reviews_message">No reviews for this movie</string>
+    <string name="no_trailers_message">No trailers for this movie</string>
+
+    <string name="internet_connection_error_message">No internet connection</string>
+    <string name="internet_connection_back_message">Back online</string>
+
+    <!-- Movie Detail Label -->
+    <string name="label_movie_detail_title">Title: </string>
+    <string name="label_movie_detail_release_date">Release Date: </string>
+    <string name="label_movie_detail_overview">Synopsis: </string>
+    <string name="label_movie_detail_vote_average">User Rating: </string>
+
+    <string name="label_reload_movies_list">Reload</string>
+    <string name="label_movie_menu_most_popular">Most Popular</string>
+    <string name="label_movie_menu_upcoming">Upcoming</string>
+
+    <string name="label_movie_detail_review">Reviews: </string>
+    <string name="label_movie_detail_trailer">Trailers: </string>
+
+    <string name="title_favorite_movie_menu">Favorite</string>
+    <string name="checkbox_favorite_movie_label">Favorite</string>
+    <string name="movie_list_menu_search">Search movie</string>
+
+    <string name="not_connected">Not connected</string>
+    <string name="back_online">Back online</string>
+
+    <!-- Movie detail content -->
+    <string name="detail_release_date_content">2019-01-31</string>
+    <string name="detail_user_rating_content">6.8</string>
+    <string name="detail_sinopsis_content">When Alita awakens with no memory of who she is in a
+        future world she does not recognize, she is taken in by Ido, a compassionate doctor who
+        realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young
+        woman with an extraordinary past.</string>
+    <string name="detail_movie_title_content">Alita Battle Angel</string>
+    <string name="transition_image">transition</string>
+    <string name="image_list_item_description">Movie image showed on the main list screen</string>
+    <string name="image_trailer_list_description">Youtube image shown on each list item</string>
+    <string name="movie_detail_image_description">Movie image shown in the detail screen page</string>
+    <string name="detail_genre_content">Drama, Comedy, Adventure, Family</string>
+    <string name="label_movie_detail_genre">Genre:</string>
+    <string name="label_movie_title_list_item">Title:</string>
+    <string name="label_movie_release_date_list_item">Release date:</string>
+</resources>

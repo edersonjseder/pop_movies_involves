@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config_release {
+            def propertiesFile = file('../local.properties')
+            if (propertiesFile.exists()) {
+
+                def localProps = new Properties()
+                localProps.load(new FileInputStream(propertiesFile))
+
+                def Properties keyProps = new Properties()
+                assert localProps['keystore.props.file'];
+
+                keyProps.load(new FileInputStream(file(localProps['keystore.props.file'])))
+
+                storeFile = file(keyProps['STORE_FILE'])
+                storePassword = keyProps['STORE_PASSWORD']
+                keyAlias = keyProps['KEY_ALIAS']
+                keyPassword = keyProps['KEY_PASSWORD']
+            }
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "involves.test.com.popularmovies"
+        minSdkVersion 27
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "API_KEY", API_KEY)
+        signingConfig signingConfigs.config_release
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config_release
+            applicationVariants.all { variant ->
+                variant.outputs.all {
+                    output ->
+                        outputFileName = new File("Pop_movies-" + variant.name + "-" + variant.versionName + ".apk");
+                }
+
+            }
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.config_release
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    productFlavors {
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.google.com' }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation('com.fasterxml.jackson.datatype:jackson-datatype-joda:2.4.0') {
+        //exclude module: ''
+    }
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    // Used to map the Json with java objects
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.6.3'
+
+    // Used to load images on screen
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.8.0@aar'
+    implementation 'com.android.support:support-annotations:28.0.0-alpha3'
+    annotationProcessor 'com.android.support:support-annotations:28.0.0-alpha3'
+
+    //3rd Libary - Inject Android object and get reference to avoid boilerplate code.
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    // Architecture components used to update UI and save data in local database
+    implementation 'android.arch.lifecycle:extensions:1.1.0'
+    annotationProcessor 'android.arch.lifecycle:compiler:1.1.0'
+
+    // Library to make HTTP connections via Rest
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.0.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.1.0'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation('com.android.support.test.espresso:espresso-contrib:3.0.2') {
+        exclude module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'appcompat'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude module: 'recyclerview-v7'
+    }
+    androidTestImplementation 'com.squareup.spoon:spoon-client:1.2.0'
+}
