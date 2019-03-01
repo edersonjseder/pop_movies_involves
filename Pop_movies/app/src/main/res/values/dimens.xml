@@ -1,0 +1,44 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">170dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin2">50dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="bottom_margin">7dp</dimen>
+    <dimen name="padding_all">8dp</dimen>
+    <dimen name="padding_left">8dp</dimen>
+    <dimen name="padding_right">8dp</dimen>
+    <dimen name="padding_top">8dp</dimen>
+    <dimen name="padding_bottom">8dp</dimen>
+    <dimen name="width_all">155dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">10dp</dimen>
+    <dimen name="fragment_vertical_margin">10dp</dimen>
+    <dimen name="fragment_vertical_margin2">65dp</dimen>
+
+    <dimen name="TextSizeFixtureTitle">14dp</dimen>
+    <dimen name="TextSizeFixtureTime">11dp</dimen>
+    <dimen name="TextSize">12dp</dimen>
+    <dimen name="TextDataSize">9dp</dimen>
+    <dimen name="TextStatusSize">9dp</dimen>
+    <dimen name="text_fixture_detail_competition_title">10dp</dimen>
+    <dimen name="paddingHorizontal">2dp</dimen>
+
+    <dimen name="TextPosition">9dp</dimen>
+    <dimen name="TextTeamName">9dp</dimen>
+    <dimen name="TextPlayedGames">9dp</dimen>
+    <dimen name="width_table_position">40dp</dimen>
+    <dimen name="width_table_team_name">150dp</dimen>
+    <dimen name="width_table_played_games">25dp</dimen>
+
+    <!-- Padding DBTeam Detail Text Label -->
+    <dimen name="padding_text_left">5dp</dimen>
+
+    <!-- Player List Text size -->
+    <dimen name="MovieListTextSize">13dp</dimen>
+</resources>

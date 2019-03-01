@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android" android:transitionOrdering="together">
+    <slide android:slideEdge="end">
+        <targets>
+            <target android:targetId="@id/layout_movie_details"/>
+        </targets>
+    </slide>
+    <fade android:duration="300">
+        <targets>
+            <target android:excludeId="@android:id/statusBarBackground"/>
+            <target android:excludeId="@android:id/navigationBarBackground"/>
+        </targets>
+    </fade>
+</transitionSet>
