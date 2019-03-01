@@ -25,7 +25,7 @@ The project was developed on Android Studio in a linux environment, so to launch
 
 The project is properly signed already, so on Android Studio just do the test verification with a gradle task to validate the app signed by clicking the Gradle option on the right side of the IDE: _app -> other_ and click on the task _'validateSigningRelease'_ with the _release_ variant selected. It can be done with the Debug variant as well by clicking in the _'validateSigningDebug'_ task or by running *./gradlew validateSigningDebug/validateSigningRelease* task in the project root directory.
 
-As for the API_KEY of the TMDB API I used my personal, so I saved on the gradle.properties, which I put in the .gitignore file so that this sensitive information doesn't go to the public, I kindly ask you to use what you have, just put it in gradle.properties like that: API_KEY="&lt;&lt;api_key&gt;&gt;" because on the app.gradle the groovy script gets the api from there to be used with the API requests.
+As for the API_KEY of the TMDB API I used my personal, so I saved on the gradle.properties, which I didn't commit the file so that this sensitive information doesn't go to the public, I kindly ask you to use what you have, just put it in gradle.properties like that: API_KEY="&lt;&lt;api_key&gt;&gt;" because on the app.gradle the groovy script gets the api from there to be used with the API requests.
 
 To build the app by using Gradle only with no Android Studio, go to the root of the project _'(&lt;&lt;your_directory&gt;&gt;/pop_movies)'_ and run _'./gradlew build'_ command. The Gradle will build the project and show something like this:<br/>
 
